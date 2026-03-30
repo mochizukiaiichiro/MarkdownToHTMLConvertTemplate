@@ -1,0 +1,183 @@
+/*--------------------
+   ページ
+  --------------------*/
+/* 背景を薄いグレーにして、中央に白い紙を置くイメージ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f3f3f3;
+}
+
+/* 本文コンテナ */
+body {
+  max-width: 900px; /*  */
+  margin: 24px auto 32px; /* 上下左右の余白 */
+  padding: 16px 32px 32px; /* 内側の余白 */
+  background: #ffffff; /* 白い紙 */
+}
+
+/* 最初の見出しの余白を縮める */
+h1:first-of-type {
+  margin-top: 5px;
+}
+
+/*--------------------
+   見出し
+  --------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 16px;
+  margin-bottom: 2px;
+}
+
+/* 見出しの文字サイズ */
+h1 {
+  font-size: 1.7em;
+}
+h2 {
+  font-size: 1.35em;
+}
+h3 {
+  font-size: 1.1em;
+}
+h4 {
+  font-size: 1.05em;
+}
+h5 {
+  font-size: 0.95em;
+}
+h6 {
+  font-size: 0.85em;
+}
+
+/* h1 の装飾 */
+h1 {
+  background: #e8e8e8;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 36px;
+  margin-bottom: 12px;
+}
+
+/* h2 の装飾 */
+h2 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 4px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+/* h3 の装飾 */
+h3 {
+  border-left: 5px solid #555;
+  padding-left: 8px;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.15em;
+}
+
+/*--------------------
+   本文
+  --------------------*/
+p {
+  line-height: 1.7;
+}
+
+/*--------------------
+   箇条書き
+  --------------------*/
+ul li,
+ol li {
+  line-height: 1.5;
+}
+
+/*--------------------
+   表
+  --------------------*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+table th {
+  background: #f2f2f2;
+  font-weight: 600;
+  color: #333;
+}
+
+table tr:nth-child(even) td {
+  background: #fafafa;
+}
+
+/*--------------------
+   目次
+  --------------------*/
+/* 2列化 */
+/* #TOC {
+  column-count: 2;
+  column-gap: 2em;
+} */
+
+/* リスト初期化 */
+#TOC ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 項目 */
+#TOC li {
+  break-inside: avoid;
+  margin: 4px 0;
+}
+
+/* 見出しレベルごとのインデント */
+#TOC li {
+  break-inside: avoid;
+  margin: 4px 0;
+}
+
+#TOC ul ul {
+  margin-left: 0.6em;
+  padding-left: 0.3em;
+}
+
+/* リンク */
+#TOC a {
+  text-decoration: none;
+  color: #333;
+}
+
+#TOC a:hover {
+  text-decoration: underline;
+}
+/*--------------------
+   コードブロック
+  --------------------*/
+pre {
+  display: block;
+}
+
+code {
+  background: #f5f5f5; /* 背景職 */
+  border-radius: 6px;
+  padding: 10px 10px; /* 内側余白 */
+  display: block;
+  margin: 10px 0; /* 上下の余白 */
+}
