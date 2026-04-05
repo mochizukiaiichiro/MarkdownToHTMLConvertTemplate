@@ -31,6 +31,15 @@
 コードブロック
 ```
 
-### 2.2.1.小項目
+### 2.2.1.画像
 
 ![](image.jpg)
+
+### 2.2.2.Mermaid記法
+
+```mermaid
+graph TD;
+    A[Start] --> B{Decision};
+    B -->|Yes| C[Process 1];
+    B -->|No| D[Process 2];
+```

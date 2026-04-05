@@ -38,6 +38,7 @@ pandoc $InputFile `
     --resource-path (Join-Path $ProjectRoot "image") `
     --css (Join-Path $ProjectRoot "src/style/style.css") `
     --template (Join-Path $ProjectRoot "src/template/template.html") `
-    --lua-filter (Join-Path $ProjectRoot "src/filters/insert-toc.lua")
+    --lua-filter (Join-Path $ProjectRoot "src/filters/insert-toc.lua")`
+    --lua-filter (Join-Path $ProjectRoot "src/filters/mermaid.lua")
 
 Write-Host end
