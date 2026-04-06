@@ -1,5 +1,9 @@
 #
 output/*.html
+!output/sample.html
+image/*
+!image/image.jpg
+input/*
+!input/sample.md
 *.pdf
 *.txt
-
